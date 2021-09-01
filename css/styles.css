@@ -89,7 +89,7 @@ a {
 
 .header {
   background-color: var(--secondary-title-color);
-  box-sizing: border-box;
+  border-bottom: 1px;
 }
 
 .header .contairner {
@@ -174,7 +174,6 @@ a {
 /*-----------------Hero----------------*/
 
 .hero {
-  padding: 200px 0;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
@@ -201,29 +200,34 @@ a {
 }
 
 .filter-button-hero {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 30px;
+  border-color: transparent;
+  cursor: pointer;
+  background: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  padding: 10px 22px 10px 22px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: var(--accent-color);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-
-  margin-top: 30px;
 }
+
 .features {
   display: flex;
 }
 
 .section-features {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .features-item:not(:last-child) {
@@ -277,13 +281,16 @@ img {
 }
 
 .section-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-bottom: 50px;
 }
 
 .team-title {
@@ -304,8 +311,9 @@ img {
 }
 
 .team-members {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*-----------------Hero--Portfolio----------------*/
@@ -327,6 +335,7 @@ img {
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -337,7 +346,6 @@ img {
   display: inline-block;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .filter-button:hover,
@@ -347,8 +355,10 @@ img {
 }
 
 .gallery-projects {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .gallery {
@@ -399,12 +409,15 @@ footer {
   background-color: #2f303a;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-  margin-bottom: 9px;
   display: block;
 }
 
@@ -413,7 +426,6 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
   display: block;
 }
 
